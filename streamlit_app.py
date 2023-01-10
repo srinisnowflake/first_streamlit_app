@@ -39,10 +39,10 @@ try:
         streamlit.error("Please select a fruit to get information.")
 #streamlit.write('The user entered ', fruit_choice)
 else:
-  back_from_function=get_fruityvice_data(fruit_choice)
+    back_from_function=get_fruityvice_data(fruit_choice)
   #fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" +fruit_choice)
 #fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
-streamlit.dataframe(back_from_function)
+    streamlit.dataframe(back_from_function)
   
   
 #don't run anything past here while we troubleshoot
